@@ -1,7 +1,9 @@
 package paradoxinfinite.wol_cn;
 
 
+
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
@@ -12,12 +14,13 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class Home extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         final Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
@@ -68,19 +71,19 @@ public class Home extends AppCompatActivity {
             for (int i = 6; i < bytes.length; i += macBytes.length) {
                 System.arraycopy(macBytes, 0, bytes, i, macBytes.length);
             }
-
             InetAddress address = InetAddress.getByName(broadcastIP);
             DatagramPacket packet = new DatagramPacket(bytes, bytes.length, address, 5555);
             DatagramSocket socket = new DatagramSocket();
             socket.send(packet);
+            socket.close();
             Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Sent",Toast.LENGTH_SHORT);
             toast.show();
-            socket.close();
         }
         catch (Exception e) {
-            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Failed",Toast.LENGTH_SHORT);
+            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Failed"+e,Toast.LENGTH_SHORT);
             toast.show();
         }
 
     }
 }
+
