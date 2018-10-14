@@ -43,8 +43,6 @@ public class Home extends AppCompatActivity {
             throw new IllegalArgumentException("Invalid MAC address.");
         }
         try {
-            Toast toast=Toast.makeText(getApplicationContext(),"Valid MAC address.",Toast.LENGTH_SHORT);
-            toast.show();
             for (int i = 0; i < 6; i++) {
                 bytes[i] = (byte) Integer.parseInt(hex[i], 16);
             }
@@ -76,11 +74,11 @@ public class Home extends AppCompatActivity {
             DatagramSocket socket = new DatagramSocket();
             socket.send(packet);
             socket.close();
-            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Sent",Toast.LENGTH_SHORT);
+            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Sent!",Toast.LENGTH_SHORT);
             toast.show();
         }
         catch (Exception e) {
-            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Failed"+e,Toast.LENGTH_SHORT);
+            Toast toast=Toast.makeText(getApplicationContext(),"Magic Packet Failed! "+e,Toast.LENGTH_SHORT);
             toast.show();
         }
 
