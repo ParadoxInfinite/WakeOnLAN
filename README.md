@@ -13,13 +13,13 @@
 
 ### Steps to enable WakeOnLAN :
 1. In BIOS
-  - Usually the option is under Power/Power Management setting. It could be different for different motherboards.
+    - Usually the option is under Power/Power Management setting. It could be different for different motherboards.
 2. In Windows
-  1. Right click or press Windows key + X, select 'Device Manager'.
-  2. Under 'Network Adapters' right click on your Ethernet Adapter/Controller and select 'Properties'.
-  3. Under 'Advanced' tab, scroll down the 'Property' list to find 'Wake on magic Packet' and 'Wake on pattern match', make sure both are enabled.
-  4. In the same window, under 'Power Management' tab, make sure 'Allow this device to wake the computer' and 'Only Allowa magic packet to wake the computer' are checked.
-  5. That's it for the setup.
+    1. Right click or press Windows key + X, select 'Device Manager'.
+    2. Under 'Network Adapters' right click on your Ethernet Adapter/Controller and select 'Properties'.
+    3. Under 'Advanced' tab, scroll down the 'Property' list to find 'Wake on magic Packet' and 'Wake on pattern match', make sure both are enabled.
+    4. In the same window, under 'Power Management' tab, make sure 'Allow this device to wake the computer' and 'Only Allowa magic packet to wake the computer' are checked.
+    5. That's it for the setup.
 
 ### Things to note :
 1. Your phone needs to be connected to the same WiFi router that your PC is plugged in to. (Otherwise you will need to setup port forwarding on the router and use public IP instead of local IP)
