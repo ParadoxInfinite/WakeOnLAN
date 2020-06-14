@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arrow"
+        android:tint="@color/cardview_light_background"
+        app:srcCompat="@drawable/ic_monitor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/mNameBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text=""
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mMACAddressBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/mIPAddressBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

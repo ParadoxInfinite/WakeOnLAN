@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">WOL_CN</string>
+    <string name="app_name">WakeOnLAN</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Main Screen</string>
+    <string name="second_fragment_label">Add Screen</string>
+    <string name="addMachine">Add Machine</string>
+    <string name="goBack">Go Back</string>
+
+    <string name="macNameHint">Name</string>
+    <string name="macAddressHint">MAC Address</string>
+    <string name="broadcastAddressHint">Broadcast Address</string>
+    <string name="noMACFound">No MACs Found. Add a new one.</string>
+    <string name="arrow">Arrow</string>
 </resources>
