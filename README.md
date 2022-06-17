@@ -1,11 +1,12 @@
 # WakeOnLAN
 ### Mini project for Computer Networks(5th Sem)
 
-### Updated the 2018 Java project with no persistence and light theme to Kotlin with persistent database and a dark (AMOLED) theme.
+##### Updated the 2018 Java project with no persistence and light theme to Kotlin with persistent database and a dark (AMOLED) theme.
 
 ### Instructions to install :
-1. Clone the repository and build in Android Studio **or** Download the release APK.
+1. Clone the repository and build in Android Studio **or** Download the [release APK](https://github.com/ParadoxInfinite/WakeOnLAN/releases/download/v1.0/WakeOnLAN-unsigned.apk).
 2. Copy the *WakeOnLAN.apk* to your device and install it.
+3. If you're here from my `nothing` application, then welcome, hmu on email/phone/LinkedIn to know more! I am assuming you have that in the application/resume, if not, raise an issue to this repo with contact details and I'll get in touch with you lol.
 
 ### Ensure before using the app :
 1. Your PC *MUST* support WakeOnLAN. (_Sometimes Motherboards are not compatible, make sure yours is._)
